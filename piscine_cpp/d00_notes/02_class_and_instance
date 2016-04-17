@@ -1,0 +1,51 @@
+#02_class_and_instance
+
+//Sample.class.hpp => declare class
+// constructor and destructor don't have return types
+// Don't forget ';' at the end
+
+#ifndef SAMPLE_CLASS_H
+# define SAMPLE_CLASS_H
+
+class   Sample {
+
+  public:
+
+    Sample( void );
+    ~Sample( void );
+
+};
+
+#endif //****************** SAMPLE_CLASS_H
+
+
+// Sample.class.cpp => define class
+
+#include <iostream >
+#include "Sample.class.hpp"
+
+Sample::Sample( void ) {
+  std::cout << "Constructor called" << std::endl;
+  return;
+}
+
+Sample::~Sample( void ) {
+
+  std::cout << "Destructor called" << std::endl;
+  return;
+}
+
+
+// main.cpp
+
+#include "Sample.class.hpp"
+
+int   main() {
+
+  Sample  instance;   // give a variable of type Sample & Contructor will be called
+
+  return 0;
+}
+
+// compilation :
+// g++ -Wall -Wextra -Wno-used -Werror Sample.class.cpp main.cpp

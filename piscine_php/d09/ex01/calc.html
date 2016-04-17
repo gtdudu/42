@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<input id="left" type="text" name="left"/>
+		<select id="op">
+			<option value="add">+</option>
+			<option value="sub">-</option>
+			<option value="mult">*</option>
+			<option value="div">/</option>
+			<option value="mod">%</option>
+		</select>
+		<input id="right" type="text" name="right"/>
+		<input onclick="my_func()" type="submit" value="Try me !"/>
+
+		<script>
+			setInterval(function() {alert("Please, use me..."); }, 30000);
+			function my_func() {
+				var res;
+				var left = parseFloat(document.getElementById("left").value);
+				var right = parseFloat(document.getElementById("right").value);
+				var op = document.getElementById("op").value;
+				if (!Number.isInteger(left) || !Number.isInteger(right) || right < 0 || left < 0)
+					alert('Error :(');
+				else
+				{
+					if (op == "add")
+						res = left + right;
+					else if (op == "sub")
+						res = left - right;
+					else if (op == "mult")
+						res = left * right;
+					else if (op == "div")
+					{
+						if (right === 0)
+							res = "It's over 9000!";
+						else
+							res = left / right;
+					}
+					else if (op == "mod")
+					{
+						if (right === 0)
+							res = "It's over 9000!";
+						else
+							res = left % right;
+					}
+					console.log(res);
+					alert(res);
+				}
+
+
+
+			}
+
+		</script>
+	</body>
+</html>

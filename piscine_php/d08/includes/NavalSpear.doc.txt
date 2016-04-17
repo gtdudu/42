@@ -1,0 +1,8 @@
+-- NavalSpear ----------------------------------------------------------------->
+NavalSpear is a kind of weapon.
+
+Constants are use to set the specifications of the Naval Spear.
+
+It' basicaly a canon that shot in front of the ship with a long range.
+
+<-------------------------------------------------------------------------------

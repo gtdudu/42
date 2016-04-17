@@ -1,0 +1,19 @@
+-- Frigate -------------------------------------------------------------------->
+The Frigate is a type of ship, in this class, all abstracts const values of ship
+are defined.
+	The type is "Imperial_Frigate";
+	Speed is set to 15;
+	PP (Power Points) are set to 10;
+	Maneuver is set to 4;
+	It is 1x5;
+	Its max Life points are 5;
+
+The magic method __construct takes an array as parameter:
+        [name] : You can put a baddass name here.
+        [x][y] : Its coordinates.
+        [direction] : Its direction (North, South, West or East. Yes we are in
+            space but let's say it the astral North Pole we are pointing). The
+            direction is set as a integer with Bitwise values set in the Game
+            class.
+The weapon is set to NavalSpear and its id is the id of its parent.
+<-------------------------------------------------------------------------------

@@ -1,0 +1,215 @@
+/* 
+Title: 42borntocode
+Version: 1.0
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, 
+img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	}
+table, td, th {
+	vertical-align: middle;
+	}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+a img {
+	}
+
+body {
+	font-size: 75%;
+	font-family: Verdana, "Helvetica Neue", Arial, sans-serif;
+	line-height: 1.6em;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	}
+h1 {
+	font-size: 2em;
+	}
+h2 {
+	font-size: 1.7em;
+	}
+h3 {
+	font-size: 1.5em;
+	}
+h4 {
+	font-size: 1.3em;
+	}
+h5 {
+	font-size: 1.2em;
+	}
+h6 {
+	font-size: 1em;
+	}
+p {
+	margin: 0 0 10px;
+	}
+blockquote {
+	margin: 1.5em 1em;
+	}
+strong {
+	font-weight: bold;
+	}
+em, dfn {
+	font-style: italic;
+	}
+dfn {
+	font-weight: bold;
+	}
+sup, sub {
+	line-height: 0;
+	}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	}
+address {
+	margin: 0 0 1.5em;
+	font-style: italic;
+	}
+del {
+	text-decoration: line-through;
+	}
+pre, code {
+	margin: 1.5em 0;
+	white-space: inherit;
+	}
+html>body pre,
+html>body code {
+	white-space: pre;
+	}
+pre, code, tt {
+	font: 1em 'andale mono', 'lucida console', monospace;
+	line-height: 1.5;
+	}
+li ul, li ol {
+	margin: 0 2em;
+	}
+ul, ol {
+	margin: 0 1.5em 1.5em 1.5em;
+	}
+ul {
+	list-style-type: disc;
+	}
+ol {
+	list-style-type: decimal;
+	}
+dl {
+	margin: 0 0 1.5em 0;
+	}
+dl dt {
+	font-weight: bold;
+	}
+dd {
+	margin: 0 0 1em 1.5em;
+	}
+table {
+	margin-bottom: 1.4em;
+	width: 100%;
+	}
+th {
+	font-weight: bold;
+	}
+th, td {
+	padding: 4px 10px 4px 5px;
+	}
+tfoot {
+	font-style: italic;
+	}
+caption {
+	background: #eee;
+	}
+.small {
+	font-size: .8em;
+	margin-bottom: 1.875em;
+	line-height: 1.875em;
+	}
+.large {
+	font-size: 1.2em;
+	line-height: 2.5em;
+	margin-bottom: 1.25em;
+	}
+.hide {
+	display: none;
+	}
+/* 
+/forms
+*/
+form {
+	margin: 0;
+	padding: 0;
+	}
+label {
+	font-weight: bold;
+	}
+fieldset {
+	padding: 1.4em;
+	margin: 0 0 1.5em 0;
+	}
+legend {
+	font-weight: bold;
+	font-size: 1.2em;
+	}
+input.text, input.title, textarea, select {
+	margin: 0.5em 0;
+	}
+input.text:focus, input.title:focus, 
+textarea:focus, select:focus {
+	border: 1px solid #666;
+	}
+input.text, input.title {
+	width: 300px;
+	padding: 5px;
+	}
+input.title {
+	font-size: 1.5em;
+	}
+textarea {
+	padding: 5px;
+	}
+/*
+/misc
+*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+.clearfix {
+	display: inline-block;
+	}
+* html .clearfix {
+	height: 1%;
+	}
+*:first-child+html .clearfix {
+	min-height: 1px;
+	}
+.clearfix {
+	display: block;
+	}
+.clear {
+	clear: both;
+	}

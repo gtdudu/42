@@ -1,0 +1,42 @@
+#08_class_vs_structure
+
+// class almost same as struct
+// one diff : a struct has a default scope that's public
+// a class has a default scope that's private...
+
+// Sample1.class.hpp
+
+#ifndef SAMPLE1_CLASS_H
+# define SAMPLE1_CLASS_H
+
+struct  Sample1 {
+
+  int   foo;
+
+  Sample1( void );
+  ~Sample1( void );
+
+  void    bar( void ) const;
+
+};
+
+#endif
+
+// Sample2.class.hpp
+// doesn't compile
+
+#ifndef SAMPLE2_CLASS_H
+# define SAMPLE2_CLASS_H
+
+class  Sample2 {
+
+  int   foo;
+
+  Sample2( void );
+  ~Sample2( void );
+
+  void    bar( void ) const;
+
+};
+
+#endif

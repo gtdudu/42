@@ -1,0 +1,62 @@
+#03_member_attributes_and_member_functions
+
+// Sample.class.hpp
+
+#ifndef SAMPLE_CLASS_H
+# define SAMPLE_CLASS_H
+
+class   Sample {
+
+  public:
+
+    int   foo;
+
+    Sample( void );
+    ~Sample( void );
+
+    void  bar( void );
+
+};
+
+#endif
+
+// Sample.class.cpp
+
+#include <iostream>
+#include "Sample.class.hpp"
+
+Sample::Sample( void ) {
+  std::cout << "Constructor called" << std::endl;
+  return;
+}
+
+Sample::~Sample( void ) {
+
+  std::cout << "Destructor called" << std::endl;
+  return;
+}
+
+void  Sample::bar( void ) {
+
+  std::cout << "Member function bar called" << std:endl;
+  return;
+}
+
+// main.cpp
+
+#include "Sample.class.hpp"
+
+int   main() {
+
+  Sample  instance;
+
+  instance.foo = 42;
+  std::cout << "instance.foo:  " << instance.foo << std::endl;
+
+  instance.bar();
+
+  return 0;
+}
+
+// compilation :
+// g++ -Wall -Wextra -Wno-used -Werror Sample.class.cpp main.cpp

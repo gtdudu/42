@@ -1,0 +1,51 @@
+
+body {
+}
+
+#info {
+	display: inline-block;
+	float: left;
+}
+
+#info2 {
+	margin-left: 50px;
+	width: 600px;
+	float: left;
+}
+
+#content {
+	width: 100%;
+}
+
+table {
+	border-spacing: 1px;
+	margin: auto;
+}
+
+#box {
+	width: 1360px;
+	margin: auto;
+}
+
+td {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #d3d3d3;
+	border-width: thin;
+	width: 6px;
+	height: 6px;
+}
+
+a {
+	padding: 0;
+	margin: 0;
+	display: block;
+	width: 100%;
+}
+
+td span {
+	padding: 0;
+	margin: 0;
+	display: block;
+	width: 100%;
+}

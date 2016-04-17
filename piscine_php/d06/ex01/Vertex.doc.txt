@@ -1,0 +1,13 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex Class handles spatials coordinnates.
+
+An instance can be constructed by passing  x, y, z, and w coordonnates as 
+well as an optionnel color.
+
+If no color is passed it will be defaulted to 0xFFFFFF. 
+Any other use is undefined behaviour.
+
+The class provides get and set accessors.
+The class provides no additional methods.
+---------------------------------------------------------------------- Vertex ->

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<div id="mydiv" style="width: 200px; height: 200px; background-color: red; border-radius: 100%;">
+		</div>
+		<script>
+
+			var i = 98;
+			function color(i) {
+				if (i % 3 == 0)
+					div.style.backgroundColor = "green";
+				else if (i % 3 == 1)
+					div.style.backgroundColor = "blue";
+				else if (i % 3 == 2)
+					div.style.backgroundColor = "red";
+			}
+
+			var div = document.getElementById("mydiv");
+			div.onmouseout = function() {
+				if (div.offsetWidth > 200)
+				{
+					i--;
+					color(i);
+					awidth = parseInt(div.style.width);
+					aheight = parseInt(div.style.height);
+					awidth -= 5;
+					aheight -= 5;
+					div.style.width = awidth +'px';
+					div.style.height = aheight + 'px';
+				}
+			}
+			div.onclick = function() {
+				i++;
+				color(i);
+				if (div.offsetWidth == 420)
+				{
+					div.style.width = '200px';
+					div.style.height = '200px';
+				}
+				else
+				{
+					awidth = parseInt(div.style.width);
+					aheight = parseInt(div.style.height);
+					awidth += 20;
+					aheight += 20;
+					div.style.width = awidth +'px';
+					div.style.height = aheight + 'px';
+				}
+			}
+
+
+		</script>
+	</body>
+</html>

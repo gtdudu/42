@@ -1,0 +1,65 @@
+notation infixe  1 + 1
+notation postfixe  1 1 +
+
+notation prefixe + (1, 1)
+si la fonction + est une fonction
+membre : 1.+(1)
+
+// integer.class.hpp
+// rhs right hand side
+
+class Integer {
+
+  Integer ( int const n);
+  ~Integer( void );
+
+public:
+  int   getValue(void ) const;
+
+  Integer &   operator=( Integer const & rhs);
+  Integer     operator+( Integer const & rhs) const;
+
+private:
+  int _n;
+
+};
+
+std::ostream& operator<<( std::ostream & o, Integer const & rhs);
+
+
+// Integer.class.cpp
+
+Integer &   Integer::operator=( Integer const & rhs ) {
+  this->_n = rhs.getValue();
+
+  return *this;
+}
+
+
+Integer     Integer::operator+( Integer const & rhs ) {
+
+  return Integer( this->_n + rhs.getvalue() );
+}
+
+std::ostream &    operator<<(std::ostream & o, Integer const & rhs) {
+  o << rhs.getValue()
+  return o;
+}
+
+
+// main.cpp
+
+int main() {
+
+  Integer  x( 30 );
+  Integer  x( 10 );
+  Integer  x( 0 );
+
+  std::cout << "Value of x : " << x << std::endl;
+
+}
+
+
+// il faut que la surchage d'opérateur soi naturel (pas bizarre)
+// rapport avec la sémantique naturel de l'opérateur
+// ne pas faire de surchage en général... peu justifier

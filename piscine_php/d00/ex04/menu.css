@@ -1,0 +1,102 @@
+body {
+	font-family: Arial, serif;
+	text-align: center;
+	background: url(http://www.psdgraphics.com/file/colorful-triangles-background.jpg);
+	background-size: 100% 100%;
+}
+
+div {
+	background-color: #234463;
+	color: white;
+	line-height: 40px;
+}
+
+.main1 {
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 40px;
+}
+.main2 {
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	left: 120px;
+}
+.main3 {
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	left: 230px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 5px;
+	width: 100px;
+	list-style: none;
+	background-color: #007FFF;
+	border: 1px solid black;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#label1 {
+	cursor: pointer;
+}
+
+#label2 {
+	cursor: pointer;
+}
+
+#label3 {
+	cursor: pointer;
+}
+
+#toggle1 {
+	display: none;
+}
+
+#toggle2 {
+	display: none;
+}
+
+#toggle3 {
+	display: none;
+}
+
+#menu1 {
+	display: none;
+}
+
+#menu2 {
+	display: none;
+}
+
+#menu3 {
+	display: none;
+}
+
+#toggle1:checked + #menu1 {
+	display: block;
+}
+
+#toggle2:checked + #menu2 {
+	display: block;
+}
+
+#toggle3:checked + #menu3 {
+	display: block;
+}

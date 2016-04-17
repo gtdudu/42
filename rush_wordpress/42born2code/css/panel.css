@@ -1,0 +1,142 @@
+/* 
+Control Panel CSS
+*/
+.tpanel-tabs {
+	padding: 0px;
+	float: left;
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.tpanel-tabs ul {
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-bottom: 0px;
+	float: left;
+}
+.tpanel-tabs li {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	color: #A2A2A2;
+	text-align: center;
+	margin-left: 0px;
+	padding-left: 0px;
+	background-position: left;
+}
+.tpanel-tabs li.selected {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	color: #A2A2A2;
+	text-align: center;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.tpanel-tabs li a {
+	color: #fff;
+	height: 40px;
+	border-right-style:solid;
+	border-right-width:2px;
+	border-right-color: #EDEDED;
+	padding-top: 10px;
+	width: 117px;
+	margin-right: 0px;
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #666666;
+	text-decoration: none;
+}
+.tpanel-tabs li a:visited {
+}
+.tpanel-tabs li a:hover {
+	color: #000000;
+	background-color: #3e7ab9;
+	background-position: 0px -50px;
+}
+.tpanel-tabs li a.selected {
+	color: #FFF;
+	background-color: #3e7ab9;
+}
+#tpanel-wrap {
+	background-color: #ffffff;
+	width: 681px;
+	float: left;
+	padding-bottom: 20px;
+}
+.tpanel-title {
+	float: left;
+	width: 671px;
+	background-color: #D9D9D9;
+	height: 34px;
+	padding-top: 10px;
+	padding-left: 10px;
+	color: #000000;
+	font-family: Georgia;
+	font-size: 20px;
+	margin-top: -27px;
+	margin-bottom: 10px;
+}
+.tpanel-sub-title {
+	width: 400px;
+	height: 25px;
+	padding-top: 8px;
+	color: #000;
+	padding-left: 20px;
+	background-color: #F1F1F1;
+	float: left;
+	font-size: 16px;
+	font-style: italic;
+	margin: 0px 0px;
+}
+
+.tpanel-right {
+	width:234px;
+	margin:0px 8px 0px 0px;
+	float: right;
+	padding: 0px;
+}
+.tpanel-right li {
+	list-style:none;
+	float:left;
+	height: 49px;
+	width: 234px;
+	padding: 0px;
+	margin: 0px;
+}
+.tpanel-right ul a {
+	padding:8px 0px 0px 37px;
+	text-decoration:none;
+	height: 25px;
+	width: 197px;
+	font-weight: bold;
+	color: #000;
+	background-color: #f1f1f1;
+	background-position: 0px -49px;
+	display: block;
+}
+.tpanel-right ul a:hover {
+}
+.tpanel-right ul a.selected {
+	cursor:default;
+	color: #fff;
+	text-decoration:none;
+	background-color: #3e7ab9;
+	background-position: 0px -1px;
+	padding-left: 37px;
+	width: 197px;
+}
+.tpanel-right div {
+	clear:left;
+}
+
+.description {
+	font-family: Arial;
+	font-size: 10px;
+}

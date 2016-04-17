@@ -1,0 +1,21 @@
+<- Vector ----------------------------------------------------------------------
+The Vector Class handles the creation of a Vector using a destination Vertex 
+and an origin Vertex.
+w component will always evaluate to 0.0.
+
+If not Origin is provided it will be defaulted to :
+x: 0, x: 0, z: 0, w, 1.0
+
+The class only provides a get accessor;
+
+Several methods are available:
+	magnitude();
+	add(Vector $v);
+	sub(Vector $v);
+	opposite();
+	scalarProduct( $c );
+	DotProduct( Vector $v );
+ 	CrossProduct( Vector $v );
+	cos( Vector $v);
+---------------------------------------------------------------------- Vector ->
+

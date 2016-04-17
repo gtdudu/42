@@ -1,0 +1,75 @@
+#12_pointers_to_members
+
+// Sample.class.hpp
+
+#ifndef SAMPLE_CLASS_H
+# define SAMPLE_CLASS_H
+
+class Sample {
+
+public:
+
+  int   foo;
+
+  Sample( void );
+  ~Sample( void );
+
+  void  bar( void ) const;
+
+};
+
+#endif
+
+
+// Sample.class.cpp
+
+#include <iostream>
+#include "Sample.class.hpp"
+
+Sample::Sample( void ) : foo( 0 ) {
+  std::cout << "Constructor called" << std::endl;
+  return;
+}
+
+Sample::~Sample( void ) {
+
+  std::cout << "Destructor called" << std::endl;
+  return;
+}
+
+void  Sample::bar( void ) const {
+
+  std::cout << "Member function bar called" << std:endl;
+  return;
+}
+
+
+// main.cpp
+
+#include <iostream>
+#include "Sample.class.hpp"
+
+int   main() {
+
+  Sample    instance;
+  Sample *  instancep = &instance;
+
+  int       Sample::*p = NULL;
+  void      (Sample::*f)( void ) const;
+
+  p = &Sample::foo;
+
+  std::cout << "Value of member foo:  "  << instance.foo << std::endl;
+  instance *p = 21;
+  std::cout << "Value of member foo:  "  << instance.foo << std::endl;
+  instance->*p = 42;
+  std::cout << "Value of member foo:  "  << instance.foo << std::endl;
+
+
+  f = &Sample::bar;
+
+  (instance.*f)();
+  (instance->*f)();
+
+  return 0;
+}

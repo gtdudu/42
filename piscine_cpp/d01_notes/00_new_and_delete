@@ -1,0 +1,72 @@
+#new && delete
+
+// new1.cpp
+
+#include <iostream>
+#include <string>
+
+class Student {
+
+  private:
+
+    std::string _login;
+
+  public:
+
+    Student(std::string login) : _login(login) {
+      std::cout << "Student " << this->_login << " is born" << std::endl;
+    }
+
+    ~Student() {
+      std::cout << "Student " << this->_login << " died" << std::endl;
+    }
+
+};
+
+int   main() {
+  Student   bob = Student("bfubar");
+  Student*  jim = new Student("jfubar");
+
+  // do some stuff here
+
+  delete jim; // jim is destroyed
+
+  return 0; //bob is destroyed
+
+}
+
+
+
+// new2.cpp
+
+#include <iostream>
+#include <string>
+
+class Student {
+
+  private:
+
+    std::string _login;
+
+  public:
+
+    Student() : _login("ldefault") {
+      std::cout << "Student " << this->_login << " is born" << std::endl;
+    }
+
+    ~Student() {
+      std::cout << "Student " << this->_login << " died" << std::endl;
+    }
+
+};
+
+int   main() {
+  Student*   students = new Student[42];
+
+  // do some stuff here
+
+  delete [] students;
+
+  return 0; //bob is destroyed
+
+}

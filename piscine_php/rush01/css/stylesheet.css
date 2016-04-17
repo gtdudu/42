@@ -1,0 +1,49 @@
+iframe {
+    background-color: #EEE5DE  ;
+    margin-left: 20px;
+}
+
+body {
+    padding-top: 70px;
+    background-color: black;
+    color: #fff;
+}
+
+#setupBox {
+	margin-top: 150px;
+    background-color: #EEE5DE ;
+    height: 300px;
+    color: black;
+
+}
+
+#openRooms {
+    background-color: #EEE5DE ;
+    min-height: 300px;
+    color: black;
+}
+
+#openRooms td {
+    color: black;
+
+    width: 150px;
+}
+
+#rank td {
+	width: 150px;
+}
+
+input {
+	color: black;
+}
+
+#play table {
+    background-image: url('../img/space-background.jpg');
+}
+
+td {
+    padding: 0;
+    margin: 0;
+    width: 6px;
+    height: 6px;
+}

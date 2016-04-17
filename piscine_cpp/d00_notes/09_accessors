@@ -1,0 +1,74 @@
+#09_accessors
+
+// Sample.class.hpp
+
+#ifndef SAMPLE_CLASS_H
+# define SAMPLE_CLASS_H
+
+class Sample {
+
+public:
+
+  Sample( void );
+  ~Sample( void );
+
+  int   getFoo( void ) const;
+  void  setFoo( int v );
+
+private:
+
+  int   _foo;
+
+};
+
+#endif
+
+// Sample.class.cpp
+
+#include <iostream>
+#include "Sample.class.hpp"
+
+Sample::Sample( void ) {
+  std::cout << "Constructor called" << std::endl;
+
+  this->setFoo( 0 );
+  std::cout << "this->getFoo:  " << this->getFoo() << std::endl;
+  return;
+}
+
+Sample::~Sample( void ) {
+
+  std::cout << "Destructor called" << std::endl;
+  return;
+}
+
+void  Sample::getFoo( void ) const {
+
+  return this->_foo;
+}
+
+
+void  Sample::setFoo( int v ) {
+
+  if ( v >= 0 )
+    this->_foo = v;
+
+  return;
+}
+
+
+// main.cpp
+
+#include <iostream>
+#include "Sample.class.hpp"
+
+int   main() {
+
+  instance.setFoo( 42 )
+  std::cout << "instance.getFoo():   "<< instance.getFoo() << std::endl;
+
+  instance.setFoo( -42 )
+  std::cout << "instance.getFoo():   "<< instance.getFoo() << std::endl;
+
+  return 0;
+}

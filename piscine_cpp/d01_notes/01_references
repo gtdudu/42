@@ -1,0 +1,116 @@
+// grosso modo un alias
+// une référence c'est un pointeur constant,
+// toujours déréférencé et jamais nul
+
+// ref1.cpp
+
+#include <iostream>
+
+int main() {
+
+  int     numberOfBalls = 42;
+
+  int*    ballsPtr = &numberOfBalls;
+  int&    ballsRef = numberOfballs;
+
+  std::cout << numberOfBalls << " " << *ballsPtr << " " << ballsRef << std::endl;
+
+  *ballsPtr = 21;
+  std::cout << numberOfBalls << std::endl;
+  ballsRef = 84;
+  std::cout << numberOfBalls << std::endl;
+
+  return 0;
+
+}
+
+// passage de paramétre par référence
+
+#include <string>
+
+void  byPtr(std::string * str) {
+  *str += " and ponies";
+}
+
+void  byConstPtr(std::string const * str) {
+  std::cout << *str << std::endl;
+}
+
+void  byRef(std::string & str) {
+  str += " and ponies";
+}
+
+void  byConstRef(std::string const & str) {
+  std::cout << str << std::endl;
+}
+
+int main(){
+  std::string str = "i like butterflies";
+
+  std::cout << str << std::endl;
+  byPtr(&str);
+  byConstPtr(&str);
+
+  str = "i like otters";
+
+  std::cout << str << std::endl;
+  byRef(str);
+  byConstConstRef(str);
+
+  return 0;
+}
+
+
+//ref3.cpp
+
+#include <iostream>
+#include <string>
+
+class   Student {
+
+  private:
+    std::string _login;
+
+  public:
+    Student(std::string const & login) : _login(login) {
+
+    }
+
+    std::string&        getLoginRef() {
+      return this->_login;
+    }
+
+    std::string const & getLoginRefConst() const {
+      return this->_login;
+    }
+
+    std::string*        getLoginPtr() {
+      return &(this->_login);
+    }
+
+    std::string const * getLoginPtrConst() const {
+      return &(this->_login);
+    }
+
+};
+
+int   main() {
+
+  Student       bob = Student("bfubar");
+  Student       jim = Student("jfubar");
+
+  std::cout << bob.getLoginRefConst() << " " << jim.getLoginRefConst() << std::endl;
+  std::cout << *(bob.getLoginPtrConst()) << " " << *(jim.getLoginPtrConst()) << std::endl;
+
+  bob.getLoginRef() = "bobfubar";
+  std::cout << bob.getLoginRefConst() << std::endl;
+
+  *(bob.getLoginPtr()) = "bobbyfubar";
+  std::cout << bob.getLoginRefConst() << std::endl;
+
+}
+
+// intérêt des références ? (par rapport aux pointeurs)
+// Si ça peut ne pas exister ou que ça doit changer => pointeur
+// sinon référence..
+// en fait cpp ça à l'air d'avoir était fait pour optimiser grave...

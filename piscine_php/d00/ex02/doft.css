@@ -1,0 +1,190 @@
+body {
+	background-color: #4F4F4F;
+}
+
+#header {
+	min-width: 1200px;
+	width: 80%;
+	height: 180px;
+	background-color: #8F8F8F;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border-radius: 1em;
+	box-shadow: 10px 10px 25px #000000;
+}
+
+#day {
+	height: 150px;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+
+#middle {
+	min-width: 1200px;
+	min-height: 870px;
+	width: 75%;
+	height: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+#navleft {
+	background-color: #8F8F8F;
+	border-radius: 1em;
+	float: left;
+	width: 10%;
+	height: 60%;
+	box-shadow: 10px 10px 25px #000000;
+}
+
+#navright {
+	background-color: #8F8F8F;
+	border-radius: 1em;
+	float: right;
+	width: 10%;
+	height: 60%;
+	box-shadow: 10px 10px 25px #000000;
+}
+
+#section {
+	background: url("resources/cluster.jpg") center no-repeat #8F8F8F;
+	background-size: 98% 97%;
+	border-radius: 1em;
+	width: 75%;
+	height: 100%;
+	margin: auto;
+	box-shadow: 10px 10px 25px #000000;
+}
+
+#link1 {
+	position: relative;
+	top: 60%;
+	left: 33%;
+	opacity: 0;
+}
+
+#link2 {
+	position: relative;
+	top: 34%;
+	left: 80%;
+	opacity: 0;
+}
+
+#navleft img {
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 17%;
+}
+
+#towel {
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 17%;
+}
+
+#book {
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 25%;
+}
+
+#wall {
+	background: url("resources/brick.jpg") repeat;
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 20%;
+}
+
+#headright {
+	display: inline-block;
+	float: right;
+}
+
+#loupe {
+	display: inline-block;
+	height: 200px;
+	float: right;
+	margin-top: 10px;
+}
+
+#headright img {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;;
+}
+
+#reload {
+	margin-top: 15px;
+}
+
+#close {
+	margin-top: 100px;
+}
+
+#active {
+	border: 5px solid red;
+	border-radius: 5px;
+}
+
+#footer {
+	min-width: 550px;
+	position: absolute;
+	top: 75%;
+	left: 10%;
+	width: 25%;
+	height: 160px;
+	background-color: #87FD87;
+	box-shadow: 10px 10px 25px #000000;
+	border-radius: 1em;
+}
+
+#footer p {
+	padding-left: 10px;
+	font-size: 18px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 0.1em;
+}
+
+#huge {
+	font-family: serif;
+	font-size: 38px;
+	font-style: normal;
+}
+
+#flou {
+	font-style: normal;
+	text-shadow: 15px 5px 10px #ff0000;
+
+}
+
+#in1 {
+	border-top: 2px solid #9A9A9A;
+	border-left: 2px solid #9A9A9A;
+	margin-left: 10px;
+	width: 70%;
+}
+
+#in2 {
+	width: 12%;
+	border-radius: 0px;
+}
+
+input {
+	margin-top: -30px;
+}

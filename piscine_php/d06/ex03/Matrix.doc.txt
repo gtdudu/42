@@ -1,0 +1,29 @@
+<- Matrix ----------------------------------------------------------------------
+The Matrix class handles the representation of a Matrix.
+
+An new instance can be created with different preset.
+new Matrix( array( 'preset' => $Matrix::PRESETTYPE ) );
+Where PRESETTYPE can be : IDENTITY, SCALE, RX,
+RY, RZ, TRANSLATION and PROJECTION.
+
+preset is required.
+Any other use is undefined.
+
+Some PRESETTYPE require params : 
+example : new Matrix( array( 'preset' => $Matrix::TRANSLATION, 'vtc' => $vtc ) );
+
+TRANSLATION require a vector 'vtc';
+SCALE require a number to scale 'scale';
+RX, RY, RZ require an angle 'angle' ( example M_PI_4 );
+PROJECTION require 'fov' ( in degree ) , 'ratio', 'near', 'far';
+
+new Matrix( array( 'preset' => $Matrix::PRESETTYPE ) );
+ew Matrix( array( 'preset' => $Matrix::PRESETTYPE ) );
+
+The class provies the following methods :
+
+Matrix mult( $rhs ) : return a new matrix result of the multiplication of the two others.
+
+Vertex transforVertex( Vertex $vtx ) : return a new vertex result of the transformation of the previous vertex by the matrix.
+
+---------------------------------------------------------------------- Matrix ->

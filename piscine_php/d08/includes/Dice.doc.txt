@@ -1,0 +1,13 @@
+-- Dice ----------------------------------------------------------------------->
+This trait allows you to roll dices into your game.
+
+The public method roll_the_dice takes a number of dices of six faces and
+stock it into the private attribute $_dice_list as an array containing the value
+of each dice.
+
+The public method merge_dice add all the dice values together and return it as
+an integer.
+
+The last method of this class is reset_the_dice, it will set the $_dice_list to
+an empty array.
+<-------------------------------------------------------------------------------

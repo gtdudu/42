@@ -1,0 +1,51 @@
+#include <iostream>
+#include <iomanip>
+
+int		main(int ac, char **av)
+{
+	if (ac >= 2)
+	{
+		int 		flag;
+		int 		len;
+		double		nb;
+
+		for (int i = 1; i < ac; i++)
+		{
+			flag = 0;
+			for (int j = 0; av[i][j]; j++)
+				flag += isalpha(av[i][j]);
+			nb = atof(av[i]);
+			len = strlen(av[i]);
+			if (flag <= 1 && len >= 1 && isdigit(av[i][0])) {
+				if (isprint(nb))
+					std::cout << "char   : '" << static_cast<char>(nb)
+						<< "'" << std::endl;
+				else
+					std::cout << "char   : " << "Non displayable" << std::endl;
+
+				std::cout << "int    : " << static_cast<int>(nb) << std::endl;
+				std::cout << "float  : " << std::fixed << std::setprecision(1)
+					<< static_cast<float>(nb) << "f" << std::endl;
+				std::cout << "double : " << static_cast<double>(nb)
+					<< std::endl;
+			} else if (len == 1) {
+				std::cout << "char   : '" << av[1] << "'" << std::endl;
+				std::cout << "int    : " << static_cast<int>(av[1][0])
+					<< std::endl;
+				std::cout << "float  : " << std::fixed << std::setprecision(1)
+					<< static_cast<float>(av[1][0]) << "f" << std::endl;
+				std::cout << "double : " << static_cast<double>(av[1][0])
+					<< std::endl;
+			} else {
+				std::cout << "char   : Impossible" << std::endl;
+				std::cout << "int    : Impossible" << std::endl;
+				std::cout << "float  : " << av[1] << "f" << std::endl;
+				std::cout << "double : " << av[1] << std::endl;
+			}
+			if (i < ac - 1)
+				std::cout << std::endl;
+		}
+	}
+
+	return 0;
+}

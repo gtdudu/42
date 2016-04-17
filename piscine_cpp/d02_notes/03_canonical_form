@@ -1,0 +1,22 @@
+// Class.sample.hpp
+
+class Sample {
+
+public:
+
+  Sample( void );   //canonical
+  Sample( int const n);
+  Sample( Sample const & src);  // canonical
+  ~Sample (void); // canonical
+
+  Sample & operator=( Sample const & rhs ); // canonical
+
+  int   getFoo( void ) const;
+
+private:
+
+  int _foo;
+
+};
+
+std::ostream &    operator<<( str::ostream & o, Sample const & i);

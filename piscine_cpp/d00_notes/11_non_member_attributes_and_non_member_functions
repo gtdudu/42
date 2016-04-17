@@ -1,0 +1,52 @@
+#11_non_member_attributes_and_non_member_functions
+
+// Sample.class.hpp
+
+#ifndef SAMPLE_CLASS_H
+# define SAMPLE_CLASS_H
+
+class Sample {
+
+public:
+
+  Sample( void );
+  ~Sample( void );
+
+  static int    getNbInst( void );
+
+private:
+
+  static int    _nbInst;
+
+};
+
+#endif
+
+// Sample.class.cpp
+
+
+#include <iostream>
+#include "Sample.class.hpp"
+
+Sample::Sample( void ) {
+
+  std::cout << "Contructor called" << std::endl;
+  Sample::_nbInst += 1;
+
+  return;
+}
+
+Sample::~Sample( void ) {
+
+  std::cout << "Destructor called" << std::endl;
+  Sample::_nbInst -= 1;
+
+  return;
+}
+
+int   Sample::getNbInst( void ) {
+
+  return Sample::_nbInst;
+}
+
+int   Sample::_nbInst = 0;

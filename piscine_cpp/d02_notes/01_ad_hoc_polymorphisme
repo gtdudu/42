@@ -1,0 +1,14 @@
+
+class Sample {
+
+  Sample( void );
+  ~Sample( void );
+
+public:
+
+  void bar( char const c) const;
+  void bar (int const n) const;
+  void bar (float const z) const;
+  void bar (Sample const & i) const;
+
+};

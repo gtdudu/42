@@ -1,0 +1,51 @@
+
+#grille
+{
+	position: relative;
+	width: 	100%;
+	height: 80%;
+	/*background-color: skyblue;*/
+	background-image: url('../img/space-background.jpg');
+	/*background-color: red;*/
+}
+
+#impossible
+{
+	width: 200px;
+	height: 100px;
+	position: relative;
+	background-color: red;
+}
+
+#case
+{
+	border: 1px solid none;
+	width: 10px;
+	height: 10px;
+}
+
+.empty
+{
+	background-color: none;
+}
+
+.move
+{
+	background-color: lightgreen;
+}
+
+
+.Fregate_Imperial_true
+{
+	background-color: blue;
+}
+
+.Fregate_Imperial_false
+{
+	background-color: red;
+}
+
+.obstacle
+{
+	background-color: black;
+}

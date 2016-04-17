@@ -1,0 +1,87 @@
+body {
+	background-image: url(http://www.psdgraphics.com/file/colorful-triangles-background.jpg);
+	background-size: 100% 100%;
+}
+table {
+	text-align: center;
+	margin-left: 5%;
+	margin-top: 5%;
+	width: 90%;
+	opacity: 0.8;
+	height: 80%;
+}
+
+td {
+	border: 1px solid black;
+	border-radius: 1em 0em 1em 0em;
+	background-color: blue;
+}
+
+h1 {
+	font-size: 1vw;
+}
+
+p {
+	font-size: 0.5vw;
+}
+.un {
+	margin-right: 0.2em;
+	text-align: right;
+}
+
+.deux {
+	vertical-align: middle;
+	line-height: 100%;
+	text-align: center;
+}
+
+.trois {
+	margin-left: 0.2em;
+	text-align: left;
+}
+
+.nothing {
+	border: 0px;
+	opacity: 0;
+	background-color: white;
+}
+
+.green {
+	background-color: #329932;
+}
+
+.apple {
+	background-color: #82B326;
+}
+
+.orange {
+	background-color: #FFAE19;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.red {
+	background-color: red;
+}
+
+.pudd {
+	background-color: #862A51;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.lightgreen {
+	background-color: #d6ead6;
+}
+
+img {
+	width: 2vw;;
+}
+
+.argh {
+	font-size: 0.8vw;
+}

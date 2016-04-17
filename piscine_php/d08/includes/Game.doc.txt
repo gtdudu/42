@@ -1,0 +1,24 @@
+-- Game ----------------------------------------------------------------------->
+The game class is the core of the program.
+It contains all the informations that every part of the game need to work.
+	The name;
+	The size of the map;
+	The value of each cardinal point as bitwise operator (Yes we are in space
+	but let's say it the astral North Pole we are pointing).
+
+The private atribut _map contains the map of the game;
+The _active attribut contains the first player.
+
+You can set the public static Verbose to True to see some debugging stuff.
+
+The map is initiated with contruct (calling the private method init map).
+
+Public method looser checks if the players still have their spaceships.
+
+Public method add_player... Adds a player.
+
+Public method add_ship... Add a ship in the direction and with the coordinates
+you ask
+
+Public method del_ship... Delete the ship it has in params.
+<-------------------------------------------------------------------------------
